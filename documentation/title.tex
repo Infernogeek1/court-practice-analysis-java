@@ -1,0 +1,23 @@
+\makeatletter
+\def\@maketitle{%
+	\newpage
+	УДК \@udk
+	\begin{flushright}
+		\begin{tabular}[t]{r}%
+			\@author
+		\end{tabular}\par%
+	\end{flushright}
+	\vskip 1em%
+	\begin{center}%
+		\let \footnote \thanks
+		{\LARGE \textbf{\@title} \par}%
+		\vskip 1.5em%
+		{\large
+			\lineskip .5em%
+		}
+		%\vskip 1em%
+		%{\large \@date}%
+	\end{center}%
+	\par
+	\vskip 1.5em}
+\makeatother

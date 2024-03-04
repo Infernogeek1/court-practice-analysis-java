@@ -1,0 +1,59 @@
+\usepackage{amsmath}
+\usepackage{amssymb} 
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage{csquotes}
+\usepackage[english, russian]{babel}
+\usepackage{enumitem}
+\usepackage{indentfirst} % красная строка
+\usepackage{setspace} % межстрочный интервал
+\setstretch{1.2}  
+\usepackage{soul}
+\usepackage{titling}% изменение титула
+\usepackage{fancyhdr}
+% \usepackage[]{hyperref}
+% \usepackage{chemfig}
+\usepackage[parentracker=true,
+backend=biber,
+hyperref=false,
+bibencoding=utf8,
+style=gost-footnote,
+language=russian,
+autolang=other,
+citestyle=gost-footnote,
+defernumbers=true,
+bibstyle=gost-numeric,
+sorting=none,
+]{biblatex} % ЦИТАТЫ
+
+
+\setlist{nosep}
+\usepackage[lmargin=2.0cm, tmargin=2.0cm, bmargin=2.0cm,rmargin=2.0cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage[labelsep=period,justification=RaggedLeft]{caption}
+\addto\captionsrussian{\renewcommand{\figurename}{Рисунок}}
+% \captionsetup[figure]{labelfont+=it}
+
+\newcommand{\fcite}[1]{\footcite{#1}}
+\newcommand{\prim}[1]{#1\ensuremath{^1}\kern-\scriptspace}
+
+\newcommand{\nameauthor}[4]{\textbf{#1} \\
+	\textit{#2}\\ 
+	\textit{#3} \\
+	\textit{Института кибербезопасности и цифровых технологий}\\
+	\textit{РТУ МИРЭА} \\
+	\makeatletter\textit{#4}\makeatother\\
+	\vspace{0.25em}\\}
+	
+\newcommand{\nameteacher}[4]{
+	\textbf{Научный руководитель:  #1}\\ 
+	\textit{#2}\\ 
+	\textit{#3}\\
+	\textit{Института кибербезопасности и цифровых технологий}\\
+	\textit{РТУ МИРЭА} \\
+	\makeatletter\textit{#4}\makeatother\\}
+	
+\makeatletter\newcommand{\@udk}{Something went wrong}
+\newcommand{\udk}[1]{\renewcommand{\@udk}{#1}}\makeatother
