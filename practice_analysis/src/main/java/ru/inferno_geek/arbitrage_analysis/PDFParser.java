@@ -1,4 +1,4 @@
-package ru.inferno_geek.criminal_judicial_practice_analysis;
+package ru.inferno_geek.arbitrage_analysis;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
